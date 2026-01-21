@@ -9,3 +9,15 @@ spec:
   type: service
   lifecycle: experimental
   owner: team-a
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: webserver
+  description: A webserver component for serving web applications
+  annotations:
+    backstage.io/techdocs-ref: dir:./docs/webserver
+spec:
+  type: service
+  lifecycle: production
+  owner: team-a
